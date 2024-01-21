@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sign-In Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #googleSignInBtn {
+      background-color: #4285f4;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign in with Google</h2>
+    <p>Click the button below to sign in with your Google account:</p>
+    
+    <!-- Google Sign-In button -->
+    <button id="googleSignInBtn">Sign in with Google</button>
+
+    <!-- Script to include Google Sign-In API -->
+    <script>
+      // Replace YOUR_CLIENT_ID with your actual Google API Client ID
+      const CLIENT_ID = 'YOUR_CLIENT_ID';
+
+      // Load the Google Sign-In API
+      function init() {
+        gapi.load('auth2', function() {
+          gapi.auth2.init({
+            client_id: CLIENT_ID,
+          });
+        });
+      }
+
+      // Attach click event to the sign-in button
+      document.getElementById('googleSignInBtn').addEventListener('click', function() {
+        const auth2 = gapi.auth2.getAuthInstance();
+        auth2.signIn().then(function(googleUser) {
+          console.log('Google user signed in:', googleUser);
+          // You can handle the signed-in user here
+        });
+      });
+    </script>
+
+    <!-- Include the Google Sign-In API script -->
+    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+  </div>
+</body>
+</html>

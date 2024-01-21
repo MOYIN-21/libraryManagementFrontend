@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../asserts/homeImg.jpg);
+} 
+
+.nav-bar{
+    display: flex;
+    margin-bottom: 80px;
+    padding-left: 80px;
+}
+
+.logo{
+    display: flex;
+    height: 80px;
+}
+
+.logo h2{
+    font-size: 80px;
+    color: #ff7200;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+ul li a{
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    margin-left: 120px;
+    display: flex;
+}
+
+.search input{
+    width:200px ;
+    height: 40px;
+    background: transparent;
+    border: 3px solid #ff7200;
+    color: #fff;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    margin-top: 40px;
+
+}
+
+.search ::placeholder{
+    color: #fff;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 40px;
+
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content-and-login{
+    margin-top: 200px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.content{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+h1 span{
+    color: #ff7200;
+}
+
+.content h1{
+    color: #fff;
+}
+
+.content .par{
+    color: #fff;
+    font-family: Arial;
+    line-height: 50px;
+    letter-spacing: 1.2px;
+    font-size: 15px;
+}
+
+.btn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    color: black;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: white;
+}
+
+.login{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0,0.8)50%);
+    top: -20px;
+    left: 870px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.login h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.login input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    border-left: none;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.login input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color:#fff;
+    font-family: Arial
+}
+
+.bttn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.bttn:hover{
+    background: white;
+    color: #ff7200;
+}
+
+.bttn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.login .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.login .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+
+.liw{
+    padding-top:15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.icon a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icon ion-icon:hover{
+    color: #ff7200;
+}
