@@ -8,16 +8,13 @@
     background-position: center;
     background-image: url(../asserts/signupImg.jpg);
     width: 400px;
-    height: 380px;
+    height: 280px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0,0.8)50%);
-    top: -20px;
-    left: 870px;
     padding: 25px;
     border-radius: 10px;
     background-color: black;
     text-align: center;
-    align-items: center; 
-    margin-top: 350px;
+    margin: 0 auto;
 }
 
 
@@ -26,9 +23,10 @@
     font-family: sans-serif;
     text-align: center;
     color: #ff7200;
+    margin: 0 auto;
     font-size: 22px;
     background-color: #fff;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 8px;
 }
 
@@ -54,7 +52,7 @@
 }
 
 .bttn{
-    width: 240px;
+    width: 250px;
     height: 40px;
     background: #ff7200;
     margin-top: 30px;
@@ -74,40 +72,4 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
-}
-
-.login .link{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.login .link a{
-    text-decoration: none;
-    color: #ff7200;
-}
-
-.liw{
-    padding-top:15px;
-    padding-bottom: 10px;
-    text-align: center;
-    color: #fff;
-}
-
-.icon {
-    text-decoration: none;
-    color: white;
-}
-
-.icon ion-icon{
-    color: #fff;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
-    transition: 0.3s ease;
-}
-
-.icon ion-icon:hover{
-    color: #ff7200;
 }

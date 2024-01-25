@@ -96,6 +96,8 @@ ul li a:hover{
 }
 
 .content-and-login{
+    display: flex;
+    padding-right: 900px;
     margin-top: 200px;
     display: flex;
     justify-content:space-evenly;
@@ -157,8 +159,8 @@ h1 span{
 }
 
 .login{
-    width: 250px;
-    height: 380px;
+    width: 350px;
+    height: 450px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0,0.8)50%);
     top: -20px;
     left: 870px;
@@ -170,20 +172,22 @@ h1 span{
 .login h2{
     width: 220px;
     font-family: sans-serif;
-    text-align: center;
     color: #ff7200;
     font-size: 22px;
     background-color: #fff;
     border-radius: 10px;
-    margin: 2px;
+    margin: 0 auto;
     padding: 8px;
+    text-align: center;
+
 }
 
 .login input{
-    width: 240px;
+    display: flex;
+    width: 350px;
     height: 35px;
     background: transparent;
-    color: #fff;
+    color: #fff2ff;
     letter-spacing: 1px;
     font-family: sans-serif;
     border-left: none;
@@ -197,19 +201,32 @@ h1 span{
 
 ::placeholder{
     color:#fff;
-    font-family: Arial
+    font-family: Arial;
+    padding-right: 270px;    
+}
+
+.login h1{
+   color: #ff7200;
+   padding-top: 30px;
+   text-align: center;
+}
+
+.option{
+    padding-top: 20px;
 }
 
 .bttn{
     width: 240px;
-    height: 40px;
+    height: 30px;
     background: #ff7200;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
     color: #fff;
     transition: 0.4s ease;
+    margin: 0 auto;
+    display: flex;
 }
 
 .bttn:hover{
@@ -219,8 +236,10 @@ h1 span{
 
 .bttn a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
+    margin: 0 auto;
+    font-size: 20px;
 }
 
 .login .link{
@@ -228,6 +247,7 @@ h1 span{
     font-size: 17px;
     padding-top: 20px;
     text-align: center;
+    color: white;
 }
 
 .login .link a{
@@ -242,6 +262,8 @@ h1 span{
     color: #fff;
 }
 
+
+
 .icon a{
     text-decoration: none;
     color: white;
@@ -249,7 +271,7 @@ h1 span{
 
 .icon ion-icon{
     color: #fff;
-    font-size: 30px;
+    font-size: 50px;
     padding-left: 14px;
     padding-top: 5px;
     transition: 0.3s ease;
@@ -258,3 +280,59 @@ h1 span{
 .icon ion-icon:hover{
     color: #ff7200;
 }
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #ff7200;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }

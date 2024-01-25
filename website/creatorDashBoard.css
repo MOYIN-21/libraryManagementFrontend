@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+    background-color: blue;
+    /* background-image: url(../asserts/homeImg.jpg); */
+} 
+
+h1{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: #ff7200;
+    padding-top: 200px;
+    font-size: 60px;
+}
+
+.main input{
+    width: 1000px;
+    height: 120px;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    border: 3px solid #ff7200;
+    margin-top: 50px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    border-left: none;
+    font-size: 15px;
+    /* margin-top: 30px; */
+
+
+}
+
+.main ::placeholder{
+    font-size: 30px;
+    padding-left: 20px;
+    color: black;;
+    font-family: Arial;
+    font-family: sans-serif;
+    border-left: none;
+}
+
+.bttn{
+    width: 1000px;
+    height: 120px;
+    background: #ff7200;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    margin: 0 auto;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.btn{
+    padding-top: 50px;
+}
+
+.bttn:hover{
+    background: white;
+    color: #ff7200;
+}
+
+.bttn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+

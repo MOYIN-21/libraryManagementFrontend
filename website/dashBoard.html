@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashBoard.com</title>
+</head>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .main{
+
+        }
+
+        h1{
+            text-align: center;
+            color: #ff7200;
+            padding-top: 150px;
+            font-size: 100px;
+        }
+
+        .header{
+            padding-top: 150px;
+            padding-left: 100px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .bttn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+        }
+
+        .bttn{
+    width: 300px;
+    height: 90px;
+    background: #ff7200;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+
+.bttn:hover{
+    background: white;
+    color: #ff7200;
+}
+    
+    </style>
+<body>
+    <div class="main">
+            <h1>Creator or Reader !</h1>
+        <div class="header">
+            <button class="bttn" onclick="creatorDashBoard()"><a href="./creatorDashBoard.html">Creator</a></button>
+            <button class="bttn" onclick="readerDashBoard()"><a href="./readerDashBoard.html">Reader</a></button>
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -42,11 +42,23 @@
             </div>
 
             <div class="login">
-                <h2>Login Here</h2>
+                <h2 class="log-div">Login Here</h2>
                <form action="" method="post">
                 <input type="text" name="name" placeholder="Enter Name Here" id="name-id">
                 <input type="password" name="password" id="password-id" placeholder="Enter Passowrd Here">
-                <button class="bttn" onclick="submitLoginForm()"><a href="">Login</a></button>
+               
+                <div class="option">
+                    <label class="container" id="creatorId">Creator
+                    <input type="radio" checked="checked" name="radio" value="creator">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container" id="readerId">Reader
+                    <input type="radio" name="radio" value="reader">
+                    <span class="checkmark"></span>
+                    </label>
+                </div>
+                
+                <button class="bttn" onclick="login()"><a href="./dashBoard.html">Login</a></button>
                </form>                
                 <p class="link">Don't have an account?<br>
                 <a href="./signUp.html">Sign up here</a></p>
@@ -62,7 +74,7 @@
             </div>
         </div>
     </div>
-    <script src="./home.js"></script>
+    <script src="./script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     
 </body>
