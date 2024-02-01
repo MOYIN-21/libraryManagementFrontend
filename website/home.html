@@ -22,12 +22,12 @@
                 </ul>
             </div>
 
-            <div class="search">
+            <!-- <div class="search">
                 <div class="input-box">
                     <input type="search" placeholder="Type to search" id="inputId">
                     <a href="a"><button class="btn">Search</button></a>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="content-and-login">
@@ -48,17 +48,17 @@
                 <input type="password" name="password" id="password-id" placeholder="Enter Passowrd Here">
                
                 <div class="option">
-                    <label class="container" id="creatorId">Creator
+                    <label class="container" id="creatorId" onclick="creatorButton()">Creator
                     <input type="radio" checked="checked" name="radio" value="creator">
                     <span class="checkmark"></span>
                     </label>
-                    <label class="container" id="readerId">Reader
-                    <input type="radio" name="radio" value="reader">
+                    <label class="container" id="readerId" onclick="readerButton()">Reader
+                    <input type="radio" checked="checked" name="radio" value="reader">
                     <span class="checkmark"></span>
                     </label>
                 </div>
                 
-                <button class="bttn" onclick="login()"><a href="./dashBoard.html">Login</a></button>
+                <button class="bttn" onclick="login()"> <a  href="">Login</a></button>
                </form>                
                 <p class="link">Don't have an account?<br>
                 <a href="./signUp.html">Sign up here</a></p>
